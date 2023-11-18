@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
+	transition: all 0.2s;
+	scroll-behavior: smooth;
+}
+
+.drum-pad {
+	width: 6rem;
+	height: 5rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px #555;
+	color: #eee;
+}
+
+.drum-pad:active {
+	opacity: 0.4;
+	box-shadow: 2px 2px #444;
+	transform: translateY(0.5rem);
+}
+
+.pads {
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.drum-pad {
+		width: 3rem;
+		height: 3rem;
+	}
+	.pads {
+		font-size: 1.3rem;
+	}
+}
